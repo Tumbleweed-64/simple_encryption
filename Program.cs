@@ -4,31 +4,19 @@ class Program
 {
     static void Main(String[] args)
     {
-		string alphabet = "abcdefghijklmnopqrstuvwxyz";
-        Console.WriteLine("Welcome to the Ceasar Shifter!");
-		Console.Write("Enter some text to encrypt: ");
-		string text = Console.ReadLine();
-		string encrypted = "";
-		text = text.ToLower();
-		Console.Write("Enter the shift (1-26): ");
-		int shift = int.Parse(Console.ReadLine());
-		if ((shift > 26) || (shift <= 0))
+		string alphabet = "abcdefghijklmnopqrstuvwxyz ";
+		string[] morse = {"∙-", "-∙∙∙", "-∙-∙", "-∙∙", "∙", "∙∙-∙", "--∙", "∙∙∙∙", "∙∙", "∙---", "-∙-", "∙-∙∙", "--", "-∙", "---", "∙--∙", "--∙-", "∙-∙", "∙∙∙", "-", "∙∙-", "∙∙∙-", "∙--", "-∙∙-", "-∙--", "--∙∙", " "};
+		string encoded = "";
+        Console.WriteLine("Welcome to the morse encoder!");
+		Console.Write("Enter some text to encode: ");
+		string decoded = Console.ReadLine();
+		decoded = decoded.ToLower();
+		for (int i = 0; i < decoded.Length; i++)			
 		{
-			Console.WriteLine("\nThat shift is out of the range provided. ");
+			int alphaIndex = alphabet.IndexOf(decoded[i]);
+			encoded += (decoded[i].ToString()).Replace(alphabet[alphaIndex].ToString(), morse[alphaIndex]);
+			encoded += " ";
 		}
-		else if ((shift <= 26) && (shift > 0))
-		{
-			for (int i = 0; i < text.Length; i++)
-			{
-					int found = alphabet.IndexOf(text[i]);
-					int shifted = found + shift;
-					if (shifted > 26)
-					{
-						shifted -= 26;
-					}
-					encrypted += (text[i].ToString()).Replace(alphabet[found], alphabet[shifted]);
-			}
-			Console.WriteLine("The encrypted message is: " + encrypted);
-		}
+		Console.WriteLine("\nThe encoded text is: " + encoded);
     }
 }
