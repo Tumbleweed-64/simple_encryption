@@ -1,6 +1,6 @@
 # simple_encryption
 
-This is a collection of some fun ciphers that you may have learned when you were young.
+This is a collection of some fun ciphers that you may have learned when you were young, built in C++ and C#.
 
 # Why?
 
