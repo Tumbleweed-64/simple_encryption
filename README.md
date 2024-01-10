@@ -12,6 +12,7 @@ So far I've made...
 
 - Morse encoder
 - Caesar Shift
+- NEW: Substitution cipher maker!
 
 More coming soon. I think the caesar shift decryption method will be pretty easy, as you essentially just brute-force it.
 Pull request for different ciphers. I couldn't think of any more than these, but Atbash is coming next.
