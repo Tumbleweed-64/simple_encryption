@@ -4,7 +4,7 @@ This is a collection of some fun ciphers that you may have learned when you were
 
 # Why?
 
-You can like, send cool secret messages to your friends if that's what you do. I don't know. Just did this to get more of a feel for the C# language.
+You can like, send cool secret messages to your friends if that's what you do. I don't know.
 
 # Cool, which ciphers?
 
