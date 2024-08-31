@@ -1,6 +1,6 @@
 # simple_encryption
 
-This is a collection of some fun ciphers that you may have learned when you were young, built in C++ and C#.
+This is a collection of some fun codes and ciphers that you most likely know, built in C++ and C#.
 
 # Why?
 
@@ -12,18 +12,13 @@ So far I've made...
 
 - Morse encoder
 - Caesar Shift
-- Substitution cipher maker!
+- Substitution cipher maker
 
 More coming soon. I think the caesar shift decryption method will be pretty easy, as you essentially just brute-force it.
-Pull request for different ciphers. I couldn't think of any more than these, but Atbash is coming next.
+Pull request for different ciphers. The Atbash and Keyword ciphers are coming next.
 
-# KNOWN BUGS
+# 2024 UPDATE
 
-It's a pretty simple console application, but I could have done better. Actually, most the bugs in here are due to bad user input.
-When you use this, know that you can't input numbers or punctuation because that would cause some translation trouble (they aren't in my letter array) 2024 update: i've decided to come back to this. It's pretty bad but I'll fix it.
-
-But yeah.
-
-Also, I need to change the string to a <code>StringBuilder</code> because with usual strings, it's hilariously inefficient.
+I've decided to come back to this. I will be rewriting all the programs in C++, and I will add Linux executable versions. The main reason I'm getting rid of the C# versions is that it's really annoying to install the dotnet suite on Ubuntu. Anyway, enjoy the ones that are here for now, I'm working on some new ones.
 
 Anyway, check this out, and as I said, pull request if you want different ciphers.
