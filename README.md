@@ -12,15 +12,15 @@ So far I've made...
 
 - Morse encoder
 - Caesar Shift
-- NEW: Substitution cipher maker!
+- Substitution cipher maker!
 
 More coming soon. I think the caesar shift decryption method will be pretty easy, as you essentially just brute-force it.
 Pull request for different ciphers. I couldn't think of any more than these, but Atbash is coming next.
 
 # KNOWN BUGS
 
-It's a pretty simple console application, but I could have done better. Actually, all the bugs in here are due to bad user input.
-When you use this, know that you can't input numbers or punctuation because that would cause some translation trouble (they aren't in my letter array)
+It's a pretty simple console application, but I could have done better. Actually, most the bugs in here are due to bad user input.
+When you use this, know that you can't input numbers or punctuation because that would cause some translation trouble (they aren't in my letter array) 2024 update: i've decided to come back to this. It's pretty bad but I'll fix it.
 
 But yeah.
 
